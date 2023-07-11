@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HeroService {
 
-  private apiUrl = 'http://localhost:3000/heroes';
+  private apiUrl = 'heroes';
 
   constructor(private messageService: MessageService, private http: HttpClient) { }
 
