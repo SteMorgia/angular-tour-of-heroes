@@ -9,6 +9,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { HeroesModule } from './heroes/heroes.module';
+import { EditHeroComponent } from './edit-hero/edit-hero.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,13 +18,15 @@ import { HeroesModule } from './heroes/heroes.module';
     AppComponent,
     HeroDetailComponent,
     MessagesComponent,
+    EditHeroComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     DashboardModule,
-    HeroesModule
+    HeroesModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

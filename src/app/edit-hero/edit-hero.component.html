@@ -1,0 +1,12 @@
+
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+  </label>
+  <label>
+    Color:
+    <input type="text" formControlName="color">
+  </label>
+  <button type="submit">Submit</button>
+</form>
